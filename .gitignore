@@ -1,0 +1,82 @@
+**/target/
+**/.idea/
+**/*.iml
+**/.DS_Store
+.vagrant
+**/*.versionsBackup
+**/node_modules
+
+# diff tool generated files
+*.orig
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+# Eclipse
+.settings
+.project
+.classpath
+.factorypath
+
+# python compiled files
+*.pyc
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+### Java template
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Ansible temp files
+# Retry files are basically lists of hosts which failed to deploy correctly in the latest run.
+*.retry
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Our vagrant settings overrides, this is a user managed file, we don't want it in the repo
+.vagrantoverrides.rb
+
+#Logs
+*.log*
+
+**/application-default.properties

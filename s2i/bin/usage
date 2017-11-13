@@ -1,0 +1,15 @@
+#!/bin/bash -e
+cat <<EOF
+This is the s2d-centos7 S2I image:
+DO NOT USE IT!  It is intended to break OCP clusters to test potential security flaws.  DO NOT USE IT!
+
+To use it, install S2I: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+s2i build 
+
+You can then run the resulting image via:
+docker run -d s2d-centos7-app
+This will do bad things to your docker instance and possibly your machine depending on how the image is configured.
+EOF
