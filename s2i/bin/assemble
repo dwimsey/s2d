@@ -23,3 +23,8 @@ fi
 #fi
 
 # Do your damage here
+
+echo Testing process:
+whoami
+set
+echo Complete
