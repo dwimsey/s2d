@@ -14,7 +14,7 @@ LABEL io.k8s.description="S2I Test Image" \
 # Copy the S2I scripts to /usr/libexec/s2i since we set the label that way
 COPY ./s2i/bin/ /usr/libexec/s2i
 
-USER 1001
+USER 0
 
 # Set the default port for applications built using this image
 EXPOSE 8080
