@@ -9,7 +9,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -47,6 +46,20 @@
 						</goals>
 						<configuration>
 							<executable>/usr/bin/id</executable>
+						</configuration>
+					</execution>
+					<execution>
+						<id>setme</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>/bin/sh</executable>
+							<arguments>
+								<argument>-c</argument>
+								<argument>set</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
