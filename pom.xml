@@ -16,7 +16,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<groupId>org.codehaus.mojo</groupId>
 				<executions>
-					<execution><!-- Run our version calculation script -->
+					<execution>
 						<id>echo-test</id>
 						<phase>generate-sources</phase>
 						<goals>
@@ -29,7 +29,7 @@
 							</arguments>
 						</configuration>
 					</execution>
-					<execution><!-- Run our version calculation script -->
+					<execution>
 						<id>whoami</id>
 						<phase>generate-sources</phase>
 						<goals>
@@ -37,6 +37,16 @@
 						</goals>
 						<configuration>
 							<executable>/usr/bin/whoami</executable>
+						</configuration>
+					</execution>
+					<execution>
+						<id>idme</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>/usr/bin/id</executable>
 						</configuration>
 					</execution>
 				</executions>
