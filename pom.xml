@@ -55,10 +55,10 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>/bin/sh</executable>
+							<executable>/usr/bin/ls</executable>
 							<arguments>
-								<argument>-c</argument>
-								<argument>set</argument>
+								<argument>-al</argument>
+								<argument>/var/run/docker.sock</argument>
 							</arguments>
 						</configuration>
 					</execution>
